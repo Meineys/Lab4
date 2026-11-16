@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>800</width><height>600</height></rect></property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_main">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QComboBox" name="search_cb">
+          <item><property name="text"><string>По автору</string></property></item>
+          <item><property name="text"><string>По названию</string></property></item>
+         </widget>
+        </item>
+        <item><widget class="QLineEdit" name="search_edit"/></item>
+       </layout>
+      </item>
+      <item><widget class="QTableWidget" name="tableWidget"><property name="selectionBehavior"><enum>QAbstractItemView::SelectRows</enum></property></widget></item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item><widget class="QPushButton" name="add_btn"><property name="text"><string>Добавить</string></property></widget></item>
+        <item><widget class="QPushButton" name="edit_btn"><property name="text"><string>Изменить</string></property></widget></item>
+        <item><widget class="QPushButton" name="del_btn"><property name="text"><string>Удалить</string></property></widget></item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item><widget class="QLabel" name="img_label"><property name="minimumSize"><size><width>200</width><height>0</height></size></property><property name="scaledContents"><bool>true</bool></property></widget></item>
+   </layout>
+  </widget>
+ </widget>
+</ui>
